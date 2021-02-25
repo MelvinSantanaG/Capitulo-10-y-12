@@ -1,12 +1,9 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Capitulo_10_y_12
 {
-    static class Program
+    static class MainProgram
     {
         /// <summary>
         ///  The main entry point for the application.
@@ -17,7 +14,7 @@ namespace Capitulo_10_y_12
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MainForm());
         }
     }
 }
