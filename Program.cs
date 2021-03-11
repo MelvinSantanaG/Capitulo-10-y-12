@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace Capitulo_10_y_12
 {
-    static class MainProgram
+    static class Program
     {
         /// <summary>
         ///  The main entry point for the application.
