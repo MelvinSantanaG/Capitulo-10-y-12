@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Capitulo_10_y_12.Capitulo_12.Ejercicio_4
 {
-    public partial class Cap12_Ejercicio4 : Form
+    public partial class Capitulo12Ejercicio4 : Form
     {
-        public Cap12_Ejercicio4()
+        public Capitulo12Ejercicio4()
         {
             InitializeComponent();
         }

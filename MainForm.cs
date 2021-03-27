@@ -14,13 +14,13 @@ namespace Capitulo_10_y_12
 
         private void Capitulo10Button_Click(object sender, EventArgs e)
         {
-            var Capitulo10 = new Capitulo10_Ejercicios();
+            var Capitulo10 = new Capitulo10EjerciciosForm();
             Capitulo10.Show();
         }
 
         private void Capitulo12Button_Click(object sender, EventArgs e)
         {
-            var Capitulo12 = new Capitulo12_Ejercicios();
+            var Capitulo12 = new Capitulo12EjerciciosForm();
             Capitulo12.Show();
         }
     }

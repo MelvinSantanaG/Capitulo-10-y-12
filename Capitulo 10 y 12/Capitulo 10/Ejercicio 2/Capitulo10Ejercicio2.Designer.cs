@@ -1,7 +1,7 @@
 ﻿
-namespace Capitulo_10_y_12.Capitulo_10.Ejercicio_5
+namespace Capitulo_10_y_12.Capitulo_10.Ejercicio_2
 {
-    partial class Cap10_Ejercicio5
+    partial class Capitulo10Ejercicio2
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Capitulo_10_y_12.Capitulo_10.Ejercicio_5
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cap10_Ejercicio5));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Capitulo10Ejercicio2));
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
@@ -38,47 +38,59 @@ namespace Capitulo_10_y_12.Capitulo_10.Ejercicio_5
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
             this.listBox1.Items.AddRange(new object[] {
-            "public class Poligono()",
+            "class Persona",
             "{",
-            "    int Lado;",
-            "    int Diagonales;",
-            "    int Angulo;",
-            "",
-            "     // Pedimos los datos",
-            "    Console.WriteLine(“Dame el Lado”);",
-            "    Lado = Convert.ToInt32(Console.ReadLine());",
-            "",
-            "    Console.WriteLine(“Dame el Diagonales”);",
-            "    Diagonales = Convert.ToInt32(Console.ReadLine());",
-            "",
-            "    Console.WriteLine(“Dame el Angulo”);",
-            "    Angulo = Convert.ToInt32(Console.ReadLine());",
+            "   public string cedula;",
+            "   public string nombre;",
+            "   public string apellido;",
             "}",
             "",
-            "public override string ToString()",
+            "public class Persona(string cedula, string nombre, string apellido)",
             "{",
-            "      String mensaje = “”;",
-            "      mensaje += “Ancho “ + ancho.ToString() + “ Alto “ + alto.ToString() + “ Esp" +
-                "esor “ + espesor.ToString();",
-            "      mensaje += “ Area “ + area.ToString() + “ Volumen “ +  volumen.ToString();",
-            "      return mensaje;",
-            "}"});
-            this.listBox1.Location = new System.Drawing.Point(14, 12);
+            "     this.cedula = cedula;",
+            "     this.nombre = nombre;",
+            "     this.apellido = apellido;",
+            "}",
+            "",
+            "public string GetCedula {return cedula;}",
+            "",
+            "public string GetNombre() {return nombre;}",
+            "",
+            "public string GetApellido() { return apellido;}",
+            "",
+            "class Estudiante : Persona ",
+            "{",
+            "    private string matricula;",
+            "    private string carrera; ",
+            "}",
+            "",
+            "public Estudiante(string cedula, string nombre, string apellido, string matricula" +
+                ", string carrera) : base (cedula,nombre,apellido)",
+            "{",
+            "     this.cedula = cedula;",
+            "     this.nombre = nombre;",
+            "     this.apellido = apellido;",
+            "}",
+            "",
+            "public string GetMatricula() { return matricula;}",
+            "",
+            "public string GetCarrera() { return carrera;}"});
+            this.listBox1.Location = new System.Drawing.Point(11, 15);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(560, 379);
+            this.listBox1.Size = new System.Drawing.Size(686, 499);
             this.listBox1.TabIndex = 0;
             // 
-            // Cap10_Ejercicio5
+            // Capitulo10Ejercicio2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(586, 401);
+            this.ClientSize = new System.Drawing.Size(709, 526);
             this.Controls.Add(this.listBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Cap10_Ejercicio5";
+            this.Name = "Capitulo10Ejercicio2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Tarea 5";
+            this.Text = "Tarea 2";
             this.ResumeLayout(false);
 
         }

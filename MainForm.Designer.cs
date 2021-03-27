@@ -30,42 +30,42 @@ namespace Capitulo_10_y_12
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.Cap10_Button = new System.Windows.Forms.Button();
-            this.Capitulo12_Button = new System.Windows.Forms.Button();
+            this.Capitulo10Button = new System.Windows.Forms.Button();
+            this.Capitulo12Button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Cap10_Button
+            // Capitulo10Button
             // 
-            this.Cap10_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Cap10_Button.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Cap10_Button.Location = new System.Drawing.Point(26, 12);
-            this.Cap10_Button.Name = "Cap10_Button";
-            this.Cap10_Button.Size = new System.Drawing.Size(78, 23);
-            this.Cap10_Button.TabIndex = 13;
-            this.Cap10_Button.Text = "Capitulo 10";
-            this.Cap10_Button.UseVisualStyleBackColor = true;
-            this.Cap10_Button.Click += new System.EventHandler(this.Capitulo10Button_Click);
+            this.Capitulo10Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Capitulo10Button.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Capitulo10Button.Location = new System.Drawing.Point(15, 10);
+            this.Capitulo10Button.Name = "Capitulo10Button";
+            this.Capitulo10Button.Size = new System.Drawing.Size(78, 23);
+            this.Capitulo10Button.TabIndex = 13;
+            this.Capitulo10Button.Text = "Capitulo 10";
+            this.Capitulo10Button.UseVisualStyleBackColor = true;
+            this.Capitulo10Button.Click += new System.EventHandler(this.Capitulo10Button_Click);
             // 
-            // Capitulo12_Button
+            // Capitulo12Button
             // 
-            this.Capitulo12_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Capitulo12_Button.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Capitulo12_Button.Location = new System.Drawing.Point(110, 12);
-            this.Capitulo12_Button.Name = "Capitulo12_Button";
-            this.Capitulo12_Button.Size = new System.Drawing.Size(83, 23);
-            this.Capitulo12_Button.TabIndex = 14;
-            this.Capitulo12_Button.Text = "Capitulo 12";
-            this.Capitulo12_Button.UseVisualStyleBackColor = true;
-            this.Capitulo12_Button.Click += new System.EventHandler(this.Capitulo12Button_Click);
+            this.Capitulo12Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Capitulo12Button.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Capitulo12Button.Location = new System.Drawing.Point(100, 10);
+            this.Capitulo12Button.Name = "Capitulo12Button";
+            this.Capitulo12Button.Size = new System.Drawing.Size(83, 23);
+            this.Capitulo12Button.TabIndex = 14;
+            this.Capitulo12Button.Text = "Capitulo 12";
+            this.Capitulo12Button.UseVisualStyleBackColor = true;
+            this.Capitulo12Button.Click += new System.EventHandler(this.Capitulo12Button_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(219, 45);
-            this.Controls.Add(this.Capitulo12_Button);
-            this.Controls.Add(this.Cap10_Button);
+            this.ClientSize = new System.Drawing.Size(199, 45);
+            this.Controls.Add(this.Capitulo12Button);
+            this.Controls.Add(this.Capitulo10Button);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
@@ -77,8 +77,8 @@ namespace Capitulo_10_y_12
         }
 
         #endregion
-        private System.Windows.Forms.Button Cap10_Button;
-        private System.Windows.Forms.Button Capitulo12_Button;
+        private System.Windows.Forms.Button Capitulo10Button;
+        private System.Windows.Forms.Button Capitulo12Button;
     }
 }
 

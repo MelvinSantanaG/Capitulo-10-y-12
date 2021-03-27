@@ -2,9 +2,9 @@
 
 namespace Capitulo_10_y_12.Capitulo_12.Ejercicio_2
 {
-    public partial class Cap12_Ejercicio2 : Form
+    public partial class Capitulo12Ejercicio2 : Form
     {
-        public Cap12_Ejercicio2()
+        public Capitulo12Ejercicio2()
         {
             InitializeComponent();
         }

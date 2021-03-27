@@ -1,7 +1,7 @@
 ﻿
-namespace Capitulo_10_y_12.Capitulo_10.Ejercicio_3
+namespace Capitulo_10_y_12.Capitulo_12.Ejercicio_4
 {
-    partial class Cap10_Ejercicio3
+    partial class Capitulo12Ejercicio4
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@ namespace Capitulo_10_y_12.Capitulo_10.Ejercicio_3
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Capitulo12Ejercicio4));
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
@@ -37,27 +38,50 @@ namespace Capitulo_10_y_12.Capitulo_10.Ejercicio_3
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
             this.listBox1.Items.AddRange(new object[] {
-            "public class Poligono(int lado, int diagonales, int angulo)",
+            "int GetInt(int[] array, int index)",
             "{",
-            "    Lado = lado;",
-            "    Diagonales = diagonales;",
-            "    Angulo = angulo;",
-            "}",
-            ""});
+            "    try",
+            "    {",
+            "        return array[index];",
+            "    }",
+            "    catch (IndexOutOfRangeException e) when (index < 0) ",
+            "    {",
+            "        throw new ArgumentOutOfRangeException(",
+            "            \"Parameter index cannot be negative.\", e);",
+            "    }",
+            "    catch (IndexOutOfRangeException e)",
+            "    {",
+            "        throw new ArgumentOutOfRangeException(",
+            "            \"Parameter index cannot be greater than the array size.\", e);",
+            "    }",
+            "    catch (Exception e) when (LogException(e))",
+            "    {",
+            "    }",
+            "    Console.WriteLine(\"Exception must have been handled\");",
+            "   catch (UnauthorizedAccessException e)",
+            "   {",
+            "    // Call a custom error logging procedure.",
+            "    LogError(e);",
+            "    // Re-throw the error.",
+            "    throw;",
+            "    }",
+            "}"});
             this.listBox1.Location = new System.Drawing.Point(12, 12);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(326, 94);
+            this.listBox1.Size = new System.Drawing.Size(365, 439);
             this.listBox1.TabIndex = 0;
             // 
-            // Cap10_Ejercicio3
+            // Capitulo12Ejercicio4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(348, 115);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ClientSize = new System.Drawing.Size(391, 461);
             this.Controls.Add(this.listBox1);
-            this.Name = "Cap10_Ejercicio3";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Capitulo12Ejercicio4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cap10_Ejercicio3";
+            this.Text = "Tarea 4";
             this.ResumeLayout(false);
 
         }

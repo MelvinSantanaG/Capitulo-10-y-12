@@ -1,7 +1,7 @@
 ﻿
-namespace Capitulo_10_y_12.Capitulo_12.Ejercicio_1
+namespace Capitulo_10_y_12.Capitulo_10.Ejercicio_4
 {
-    partial class Cap12_Ejercicio1
+    partial class Capitulo10Ejercicio4
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@ namespace Capitulo_10_y_12.Capitulo_12.Ejercicio_1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Capitulo10Ejercicio4));
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
@@ -37,37 +38,39 @@ namespace Capitulo_10_y_12.Capitulo_12.Ejercicio_1
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
             this.listBox1.Items.AddRange(new object[] {
-            "public static int Factorial(int num) {",
-            "     int result = 1;",
-            "            for(int i=1;i<=num;i++)",
-            "            {",
-            "                result *= i;",
-            "            }",
-            "            return result;",
-            "        }",
+            "public class Poligono()",
+            "{",
+            "    int Lado;",
+            "    int Diagonales;",
+            "    int Angulo;",
             "",
-            "        static void Main(string[] args)",
-            "        {",
-            "            Console.Write(\"Number : \");",
-            "            int number = Convert.ToInt32(Console.ReadLine());",
-            "            int fact = Factorial(number);",
-            "            Console.WriteLine(\"{0} factorial is {1}\", number, fact);",
-            "            Console.ReadKey();",
-            "        }"});
-            this.listBox1.Location = new System.Drawing.Point(12, 14);
+            "     // Pedimos los datos",
+            "    Console.WriteLine(“Dame el Lado”);",
+            "    Lado = Convert.ToInt32(Console.ReadLine());",
+            "",
+            "    Console.WriteLine(“Dame el Diagonales”);",
+            "    Diagonales = Convert.ToInt32(Console.ReadLine());",
+            "",
+            "    Console.WriteLine(“Dame el Angulo”);",
+            "    Angulo = Convert.ToInt32(Console.ReadLine());",
+            "}",
+            ""});
+            this.listBox1.Location = new System.Drawing.Point(12, 12);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(329, 259);
+            this.listBox1.Size = new System.Drawing.Size(295, 244);
             this.listBox1.TabIndex = 0;
             // 
-            // Cap12_Ejercicio1
+            // Capitulo10Ejercicio4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(352, 282);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ClientSize = new System.Drawing.Size(319, 267);
             this.Controls.Add(this.listBox1);
-            this.Name = "Cap12_Ejercicio1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Capitulo10Ejercicio4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cap12_Ejercicio1";
+            this.Text = "Tarea 4";
             this.ResumeLayout(false);
 
         }

@@ -1,7 +1,7 @@
 ﻿
-namespace Capitulo_10_y_12.Capitulo_12.Ejercicio_4
+namespace Capitulo_10_y_12.Capitulo_12.Ejercicio_1
 {
-    partial class Cap12_Ejercicio4
+    partial class Capitulo12Ejercicio1
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@ namespace Capitulo_10_y_12.Capitulo_12.Ejercicio_4
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Capitulo12Ejercicio1));
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
@@ -37,48 +38,39 @@ namespace Capitulo_10_y_12.Capitulo_12.Ejercicio_4
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
             this.listBox1.Items.AddRange(new object[] {
-            "int GetInt(int[] array, int index)",
-            "{",
-            "    try",
-            "    {",
-            "        return array[index];",
-            "    }",
-            "    catch (IndexOutOfRangeException e) when (index < 0) ",
-            "    {",
-            "        throw new ArgumentOutOfRangeException(",
-            "            \"Parameter index cannot be negative.\", e);",
-            "    }",
-            "    catch (IndexOutOfRangeException e)",
-            "    {",
-            "        throw new ArgumentOutOfRangeException(",
-            "            \"Parameter index cannot be greater than the array size.\", e);",
-            "    }",
-            "    catch (Exception e) when (LogException(e))",
-            "    {",
-            "    }",
-            "    Console.WriteLine(\"Exception must have been handled\");",
-            "   catch (UnauthorizedAccessException e)",
-            "   {",
-            "    // Call a custom error logging procedure.",
-            "    LogError(e);",
-            "    // Re-throw the error.",
-            "    throw;",
-            "    }",
-            "}"});
-            this.listBox1.Location = new System.Drawing.Point(3, 13);
+            "public static int Factorial(int num) {",
+            "     int result = 1;",
+            "            for(int i=1;i<=num;i++)",
+            "            {",
+            "                result *= i;",
+            "            }",
+            "            return result;",
+            "        }",
+            "",
+            "        static void Main(string[] args)",
+            "        {",
+            "            Console.Write(\"Number : \");",
+            "            int number = Convert.ToInt32(Console.ReadLine());",
+            "            int fact = Factorial(number);",
+            "            Console.WriteLine(\"{0} factorial is {1}\", number, fact);",
+            "            Console.ReadKey();",
+            "        }"});
+            this.listBox1.Location = new System.Drawing.Point(12, 14);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(365, 439);
+            this.listBox1.Size = new System.Drawing.Size(329, 259);
             this.listBox1.TabIndex = 0;
             // 
-            // Cap12_Ejercicio4
+            // Cap12_Ejercicio1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(382, 459);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ClientSize = new System.Drawing.Size(352, 282);
             this.Controls.Add(this.listBox1);
-            this.Name = "Cap12_Ejercicio4";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Cap12_Ejercicio1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cap12_Ejercicio4";
+            this.Text = "Tarea 1";
             this.ResumeLayout(false);
 
         }

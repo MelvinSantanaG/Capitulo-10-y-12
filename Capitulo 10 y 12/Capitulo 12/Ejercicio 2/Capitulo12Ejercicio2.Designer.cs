@@ -1,7 +1,7 @@
 ﻿
-namespace Capitulo_10_y_12.Capitulo_10.Ejercicio_4
+namespace Capitulo_10_y_12.Capitulo_12.Ejercicio_2
 {
-    partial class Cap10_Ejercicio4
+    partial class Capitulo12Ejercicio2
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@ namespace Capitulo_10_y_12.Capitulo_10.Ejercicio_4
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Capitulo12Ejercicio2));
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
@@ -37,37 +38,48 @@ namespace Capitulo_10_y_12.Capitulo_10.Ejercicio_4
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
             this.listBox1.Items.AddRange(new object[] {
-            "public class Poligono()",
+            "using System;",
+            "using System.IO;",
+            "using System.Diagnostics;",
+            "",
+            "class TestDebug",
             "{",
-            "    int Lado;",
-            "    int Diagonales;",
-            "    int Angulo;",
+            "    static void Main()",
+            "    {",
+            "        // Create a new stream object for an output file named TestFile.txt.",
+            "        using (FileStream myFileStream =",
+            "            new FileStream(\"TestFile.txt\", FileMode.Append))",
+            "        {",
+            "            // Add the stream object to the trace listeners.",
+            "            TextWriterTraceListener myTextListener =",
+            "                new TextWriterTraceListener(myFileStream);",
+            "            Debug.Listeners.Add(myTextListener);",
             "",
-            "     // Pedimos los datos",
-            "    Console.WriteLine(“Dame el Lado”);",
-            "    Lado = Convert.ToInt32(Console.ReadLine());",
+            "            // Write output to the file.",
+            "            Debug.WriteLine(\"Test output\");",
             "",
-            "    Console.WriteLine(“Dame el Diagonales”);",
-            "    Diagonales = Convert.ToInt32(Console.ReadLine());",
-            "",
-            "    Console.WriteLine(“Dame el Angulo”);",
-            "    Angulo = Convert.ToInt32(Console.ReadLine());",
-            "}",
-            ""});
+            "            // Flush and close the output stream.",
+            "            Debug.Flush();",
+            "            Debug.Close();",
+            "        }",
+            "    }",
+            "}"});
             this.listBox1.Location = new System.Drawing.Point(12, 12);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(295, 244);
+            this.listBox1.Size = new System.Drawing.Size(362, 394);
             this.listBox1.TabIndex = 0;
             // 
-            // Cap10_Ejercicio4
+            // Capitulo12Ejercicio2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(319, 264);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ClientSize = new System.Drawing.Size(386, 417);
             this.Controls.Add(this.listBox1);
-            this.Name = "Cap10_Ejercicio4";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Capitulo12Ejercicio2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cap10_Ejercicio4";
+            this.Text = "Tarea 2";
             this.ResumeLayout(false);
 
         }

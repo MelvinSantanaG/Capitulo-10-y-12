@@ -1,7 +1,7 @@
 ﻿
-namespace Capitulo_10_y_12.Capitulo_12.Ejercicio_2
+namespace Capitulo_10_y_12.Capitulo_12.Ejercicio_5
 {
-    partial class Cap12_Ejercicio2
+    partial class Capitulo12Ejercicio5
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@ namespace Capitulo_10_y_12.Capitulo_12.Ejercicio_2
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Capitulo12Ejercicio5));
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
@@ -38,45 +39,54 @@ namespace Capitulo_10_y_12.Capitulo_12.Ejercicio_2
             this.listBox1.ItemHeight = 15;
             this.listBox1.Items.AddRange(new object[] {
             "using System;",
-            "using System.IO;",
-            "using System.Diagnostics;",
+            "using System.Collections.Generic;",
+            "using System.Text;",
             "",
-            "class TestDebug",
-            "{",
-            "    static void Main()",
-            "    {",
-            "        // Create a new stream object for an output file named TestFile.txt.",
-            "        using (FileStream myFileStream =",
-            "            new FileStream(\"TestFile.txt\", FileMode.Append))",
-            "        {",
-            "            // Add the stream object to the trace listeners.",
-            "            TextWriterTraceListener myTextListener =",
-            "                new TextWriterTraceListener(myFileStream);",
-            "            Debug.Listeners.Add(myTextListener);",
+            "namespace Cap12_2",
             "",
-            "            // Write output to the file.",
-            "            Debug.WriteLine(\"Test output\");",
+            "public class Program {",
+            "          static void Main(string[] args){",
+            "          int a = 5;",
+            "          int b = 10;",
+            "          int c = 0;",
+            "          int r = 0;",
+            "      ",
+            "         Console.WriteLine(“Dame el valor del divisior”);",
+            "         a = Convert.ToInt32(Console.ReadLine());",
+            "         try",
+            "         {",
+            "                  r = b / a;",
+            "          }",
+            "          catch (Exception e)",
+            "           {",
+            "                  Console.WriteLine(“No es posible dividir entre cero”);",
+            "                   r = 0;",
+            "           }",
+            "          finally",
+            "          {",
+            "                    Console.WriteLine(“El resultado es {0}”, r);",
+            "          }",
             "",
-            "            // Flush and close the output stream.",
-            "            Debug.Flush();",
-            "            Debug.Close();",
-            "        }",
-            "    }",
+            "         for (int n = 0; n < 5; n++){",
+            "                    Console.WriteLine(“El resultado es {0}”, r);",
+            "         }",
             "}"});
             this.listBox1.Location = new System.Drawing.Point(12, 12);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(362, 394);
+            this.listBox1.Size = new System.Drawing.Size(360, 499);
             this.listBox1.TabIndex = 0;
             // 
-            // Cap12_Ejercicio2
+            // Capitulo12Ejercicio5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(383, 412);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ClientSize = new System.Drawing.Size(384, 520);
             this.Controls.Add(this.listBox1);
-            this.Name = "Cap12_Ejercicio2";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Capitulo12Ejercicio5";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cap12_Ejercicio2";
+            this.Text = "Tarea 5";
             this.ResumeLayout(false);
 
         }

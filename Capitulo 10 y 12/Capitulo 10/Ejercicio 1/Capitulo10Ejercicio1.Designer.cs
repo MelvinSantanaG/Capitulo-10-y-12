@@ -1,7 +1,7 @@
 ﻿
 namespace Capitulo_10_y_12.Capitulo_10.Ejercicio_1
 {
-    partial class Cap10_Ejercicio1
+    partial class Capitulo10Ejercicio1
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@ namespace Capitulo_10_y_12.Capitulo_10.Ejercicio_1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Capitulo10Ejercicio1));
             this.InventarioListBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
@@ -64,20 +65,22 @@ namespace Capitulo_10_y_12.Capitulo_10.Ejercicio_1
             "       public string Descripcion",
             "       public int Cantidad",
             "}"});
-            this.InventarioListBox.Location = new System.Drawing.Point(12, 24);
+            this.InventarioListBox.Location = new System.Drawing.Point(11, 12);
             this.InventarioListBox.Name = "InventarioListBox";
             this.InventarioListBox.Size = new System.Drawing.Size(296, 424);
             this.InventarioListBox.TabIndex = 0;
             // 
-            // Cap10_Ejercicio1
+            // Capitulo10Ejercicio1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(319, 461);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ClientSize = new System.Drawing.Size(319, 449);
             this.Controls.Add(this.InventarioListBox);
-            this.Name = "Cap10_Ejercicio1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Capitulo10Ejercicio1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cap10_Ejercicio1";
+            this.Text = "Tarea 1";
             this.ResumeLayout(false);
 
         }

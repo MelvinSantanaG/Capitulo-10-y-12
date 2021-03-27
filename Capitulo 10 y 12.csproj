@@ -6,6 +6,7 @@
     <RootNamespace>Capitulo_10_y_12</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <ApplicationIcon>tarea.ico</ApplicationIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

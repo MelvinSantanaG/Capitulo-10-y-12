@@ -1,7 +1,7 @@
 ﻿
-namespace Capitulo_10_y_12.Capitulo_10.Ejercicio_2
+namespace Capitulo_10_y_12.Capitulo_10.Ejercicio_3
 {
-    partial class Cap10_Ejercicio2
+    partial class Capitulo10Ejercicio3
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@ namespace Capitulo_10_y_12.Capitulo_10.Ejercicio_2
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Capitulo10Ejercicio3));
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
@@ -37,57 +38,29 @@ namespace Capitulo_10_y_12.Capitulo_10.Ejercicio_2
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
             this.listBox1.Items.AddRange(new object[] {
-            "class Persona",
+            "public class Poligono(int lado, int diagonales, int angulo)",
             "{",
-            "   public string cedula;",
-            "   public string nombre;",
-            "   public string apellido;",
+            "    Lado = lado;",
+            "    Diagonales = diagonales;",
+            "    Angulo = angulo;",
             "}",
-            "",
-            "public class Persona(string cedula, string nombre, string apellido)",
-            "{",
-            "     this.cedula = cedula;",
-            "     this.nombre = nombre;",
-            "     this.apellido = apellido;",
-            "}",
-            "",
-            "public string GetCedula {return cedula;}",
-            "",
-            "public string GetNombre() {return nombre;}",
-            "",
-            "public string GetApellido() { return apellido;}",
-            "",
-            "class Estudiante : Persona ",
-            "{",
-            "    private string matricula;",
-            "    private string carrera; ",
-            "}",
-            "",
-            "public Estudiante(string cedula, string nombre, string apellido, string matricula" +
-                ", string carrera) : base (cedula,nombre,apellido)",
-            "{",
-            "     this.cedula = cedula;",
-            "     this.nombre = nombre;",
-            "     this.apellido = apellido;",
-            "}",
-            "",
-            "public string GetMatricula() { return matricula;}",
-            "",
-            "public string GetCarrera() { return carrera;}"});
-            this.listBox1.Location = new System.Drawing.Point(11, 15);
+            ""});
+            this.listBox1.Location = new System.Drawing.Point(12, 12);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(686, 499);
+            this.listBox1.Size = new System.Drawing.Size(326, 94);
             this.listBox1.TabIndex = 0;
             // 
-            // Cap10_Ejercicio2
+            // Capitulo10Ejercicio3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(709, 526);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ClientSize = new System.Drawing.Size(351, 115);
             this.Controls.Add(this.listBox1);
-            this.Name = "Cap10_Ejercicio2";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Capitulo10Ejercicio3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cap10_Ejercicio2";
+            this.Text = "Tarea 3";
             this.ResumeLayout(false);
 
         }
